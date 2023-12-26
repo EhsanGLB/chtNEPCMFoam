@@ -1,0 +1,7 @@
+/* dynamicCode:
+ * SHA1 = 3d452ce0e764058c4bf076968f631afcf4cad609
+ */
+functionObjectTemplate.C
+FilterFunctionObjectTemplate.C
+
+LIB = $(PWD)/../platforms/$(WM_OPTIONS)/lib/libpostProcess_3d452ce0e764058c4bf076968f631afcf4cad609

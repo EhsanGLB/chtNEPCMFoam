@@ -1,0 +1,38 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | foam-extend: Open Source CFD                    |
+|  \\    /   O peration     | Version:     4.1                                |
+|   \\  /    A nd           | Web:         http://www.foam-extend.org         |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      transportProperties;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+alphaEqActivation inactive;
+
+l		l [ 0 0 0 0 0 0 0 ] 0.447;
+lambda		lambda [ 0 0 0 0 0 0 0 ] 3;
+
+//Thermal properties of NEPCM's core
+rhoc		rhoc [ 1 -3 0 0 0 0 0 ] 778;
+Cpc		Cpc [ 0 2 -2 -1 0 0 0 ] 2380;
+kappac		kappac [ 1 1 -3 -1 0 0 0 ] 0.2;
+betac		betac [ 0 0 0 -1 0 0 0 ] 8.0e-4;
+Tf		Tf [ 0 0 0 1 0 0 0 ] 317.35;
+TMr		TMr [ 0 0 0 1 0 0 0 ] 1.0;
+hc		hc [ 0 2 -2 0 0 0 0 ] 251612;
+
+//Thermal properties of NEPCM's shell
+rhos		rhos [ 1 -3 0 0 0 0 0 ] 1185;
+Cps		Cps [ 0 2 -2 -1 0 0 0 ] 1466;
+kappas		kappas [ 1 1 -3 -1 0 0 0 ] 0.2;
+betas		betas [ 0 0 0 -1 0 0 0 ] 4.4e-4;
+ds		ds [ 0 1 0 0 0 0 0 ] 50e-09;
+
+// ************************************************************************* //
