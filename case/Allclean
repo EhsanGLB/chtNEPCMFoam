@@ -15,4 +15,5 @@ rm -rf constant/chamber/polyMesh
 rm -rf constant/leftSolid
 rm -rf constant/rightSolid
 rm -rf VTK
-
+rm -rf dynamicCode
+rm -f post*
